@@ -51,14 +51,14 @@ keyboard.keymap = [
         KC.N7, KC.N8, KC.N9, KC.N0, ___,                  XXX,       KC.F7, KC.F8, KC.F9, KC.F10,   DEL,     
         KC.N4, KC.N5, KC.N6, KC.LBRACKET, KC.RBRACKET,    XXX,       KC.F4, KC.F5, KC.F6, KC.F11,   TRANS,  
         KC.N1, KC.N2, KC.N3, KC.MINUS,  KC.EQUAL,         TRANS,      KC.F1, KC.F2, KC.F3, KC.F12,  TRANS,
-        TRANS, TRANS, TRANS, TRANS, TRANS,                TRANS,      TRANS, TRANS, TRANS, TRANS, TRANS, 
+        TRANS, TRANS, TRANS, TRANS, TRANS,                TRANS,      TRANS, TRANS, BASE, ___, TRANS, 
         
     ],
     [
-        ___, KC.UP, ___, ___,  ___,                       XXX,       ___,  ___,  ___, ___,  ___,
-        KC.LEFT, KC.DOWN, KC.RIGHT, ___,  ___,            XXX,       ___,  ___,  ___, ___,  ___,
+        ___, KC.UP, ___, ___,  ___,                       XXX,       ___,  KC.PGUP,  KC.PGDOWN, ___,  ___,
+        KC.LEFT, KC.DOWN, KC.RIGHT, ___,  ___,            XXX,       ___,  KC.HOME,  KC.END, ___,  ___,
         ___,  ___,  ___, ___,  ___,                       TRANS,      ___,  ___,  ___, ___,  ___,
-        TRANS, TRANS, TRANS, TRANS, TRANS,                TRANS,      TRANS, TRANS, TRANS, TRANS, TRANS, 
+        TRANS, TRANS, TRANS, TRANS, TRANS,                TRANS,      TRANS, TRANS, ___, BASE, TRANS, 
     ],
    ]
 
