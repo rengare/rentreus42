@@ -8,8 +8,6 @@ import usb_hid
 supervisor.set_next_stack_limit(4096 + 4096)
 
 # WARNING: Enable below code only when you are done with the setup
-# and you added a way to wire GP0 and GP16 toghether
-# I have added 2 wires which goes outside of the chassis
 
 row = digitalio.DigitalInOut(board.GP14)
 col = digitalio.DigitalInOut(board.GP19)
