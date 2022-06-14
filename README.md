@@ -42,6 +42,6 @@ To do so, connect the extra cables (row1 and col1) during boot and the storage s
 ## Some pics
 
 ![1](./pics/1.jpg)
-![2](./pics/3.jpg)
+![2](./pics/2.jpg)
 ![3](./pics/3.jpg)
 
