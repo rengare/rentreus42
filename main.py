@@ -26,8 +26,9 @@ ENTER = KC.ENTER
 SPACE = KC.SPACE
 BACK = KC.BACKSPACE
 DEL = KC.DELETE
-
-XXXXXXX = KC.NO
+TRANS = KC.TRANSPARENT
+___ = KC.NO
+XXX = KC.NO
 
 # Layers 
 BASE = KC.TO(0)	
@@ -40,26 +41,26 @@ keyboard.debug_enabled = False
 
 # make keymap
 keyboard.keymap = [
-    [  # base                                                #middle
-        KC.Q,      KC.W,      KC.E,      KC.R,      KC.T,    XXXXXXX,     KC.Y,      KC.U,      KC.I,      KC.O,      KC.P,     
-        KC.A,      KC.S,      KC.D,      KC.F,      KC.G,    XXXXXXX,     KC.H,      KC.J,      KC.K,      KC.L,      KC.SCLN,  
-        KC.Z,      KC.X,      KC.C,      KC.V,      KC.B,      CTRL,      KC.N,      KC.M,      KC.COMM,   KC.DOT,    KC.SLSH,
-        ESC,       TAB,       SUPER,     SHIFT,     SPACE,     ALT,       BACK,      RALT,      L1,        L2,        ENTER,  
+    [
+        KC.Q, KC.W, KC.E,  KC.R,  KC.T,                   XXX,        KC.Y, KC.U, KC.I,    KC.O,   KC.P,     
+        KC.A, KC.S, KC.D,  KC.F,  KC.G,                   XXX,        KC.H, KC.J, KC.K,    KC.L,   KC.SCLN,  
+        KC.Z, KC.X, KC.C,  KC.V,  KC.B,                   ALT,       KC.N, KC.M, KC.COMM, KC.DOT, KC.SLSH,
+        ESC,  TAB,  SHIFT, SUPER, SPACE,                  CTRL,        BACK, RALT, L1, L2,  ENTER,  
     ],
-    [  # func                                                #middle
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     DEL,      XXXXXXX,  BASE,  XXXXXXX,  XXXXXXX,
+    [
+        KC.N7, KC.N8, KC.N9, KC.N0, ___,                  XXX,       KC.F7, KC.F8, KC.F9, KC.F10,   DEL,     
+        KC.N4, KC.N5, KC.N6, KC.LBRACKET, KC.RBRACKET,    XXX,       KC.F4, KC.F5, KC.F6, KC.F11,   TRANS,  
+        KC.N1, KC.N2, KC.N3, KC.MINUS,  KC.EQUAL,         TRANS,      KC.F1, KC.F2, KC.F3, KC.F12,  TRANS,
+        TRANS, TRANS, TRANS, TRANS, TRANS,                TRANS,      TRANS, TRANS, TRANS, TRANS, TRANS, 
+        
     ],
-    [  # xxxx                                                #middle
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,      XXXXXXX,     XXXXXXX,  XXXXXXX,  BASE,  XXXXXXX,  XXXXXXX,
-    ]
+    [
+        ___, KC.UP, ___, ___,  ___,                       XXX,       ___,  ___,  ___, ___,  ___,
+        KC.LEFT, KC.DOWN, KC.RIGHT, ___,  ___,            XXX,       ___,  ___,  ___, ___,  ___,
+        ___,  ___,  ___, ___,  ___,                       TRANS,      ___,  ___,  ___, ___,  ___,
+        TRANS, TRANS, TRANS, TRANS, TRANS,                TRANS,      TRANS, TRANS, TRANS, TRANS, TRANS, 
+    ],
    ]
 
 if __name__ == '__main__':
-    # keyboard.go(hid_type=HIDModes.BLE, ble_name='Rentreus42')
     keyboard.go()
