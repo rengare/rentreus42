@@ -50,14 +50,14 @@ keyboard.keymap = [
     [
         KC.EXCLAIM, KC.AT, KC.LPRN, KC.RPRN, KC.PIPE,        XXX,        KC.PGUP,  KC.N7, KC.N8,   KC.N9,   KC.ASTERISK,     
         KC.HASH, KC.DLR, KC.LBRC, KC.RBRC   ,KC.ZKHK,        XXX,        KC.PGDN,  KC.N4, KC.N5,   KC.N6,   KC.MINUS,     
-        KC.PERC, KC.AMPR, ___, ___, ___,                     TRANS,      ___,      KC.N1, KC.N2,   KC.N3,   KC.BSLS,     
-        TRANS, L2, TRANS, TRANS, TRANS,                      TRANS,      L2,       KC.DOT,  L0  ,  KC.N0,   KC.EQUAL, 
+        KC.PERC, KC.AMPR, 	KC.ASTR, KC.PIPE, ___,                     TRANS,      ___,      KC.N1, KC.N2,   KC.N3,   KC.BSLS,     
+        TRANS, L2, TRANS, TRANS, TRANS,                      TRANS,      TRANS,    L2,    KC.DOT,  KC.N0,   KC.EQUAL, 
     ],
     [
         KC.PSCR, KC.HOME, KC.UP, KC.END, KC.PGUP,           XXX,        KC.PGUP,   KC.F7, KC.F8,   KC.F9,  KC.F10,       
         DEL, KC.LEFT, KC.DOWN, KC.RIGHT,KC.PGDN,            XXX,        KC.PGDN,   KC.F4, KC.F5,   KC.F6,  KC.F11,    
         ___, ___, ___, ___, ___,                            TRANS,      KC.AMPR,   KC.F1, KC.F2,   KC.F3,  KC.F12,   
-        TRANS, L0, TRANS, TRANS, TRANS,                     TRANS,      L1,          L0,     L0 ,   ___,   ENTER,  
+        TRANS, L0, TRANS, TRANS, TRANS,                     TRANS,      TRANS,      L0,     ___ ,   ___,   ENTER,  
     ],
 ]
 

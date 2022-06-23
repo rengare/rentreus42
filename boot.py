@@ -22,5 +22,6 @@ if not row.value:
     usb_cdc.disable()
     usb_hid.enable(boot_device=1)
 
+
 row.deinit()
 col.deinit()
