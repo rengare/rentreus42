@@ -56,7 +56,7 @@ keyboard.keymap = [
     [
         KC.PSCR, KC.HOME, KC.UP, KC.END, KC.PGUP,           XXX,        KC.PGUP,   KC.F7, KC.F8,   KC.F9,  KC.F10,       
         DEL, KC.LEFT, KC.DOWN, KC.RIGHT,KC.PGDN,            XXX,        KC.PGDN,   KC.F4, KC.F5,   KC.F6,  KC.F11,    
-        ___, ___, ___, ___, ___,                            TRANS,      KC.AMPR,   KC.F1, KC.F2,   KC.F3,  KC.F12,   
+       KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP, KC.MEDIA_PREV_TRACK, KC.MEDIA_NEXT_TRACK, KC.MEDIA_PLAY_PAUSE,                            TRANS,      KC.AMPR,   KC.F1, KC.F2,   KC.F3,  KC.F12,   
         TRANS, L0, TRANS, TRANS, TRANS,                     TRANS,      TRANS,      L0,     ___ ,   ___,   ENTER,  
     ],
 ]
